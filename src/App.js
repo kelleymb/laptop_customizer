@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Feature from './Feature';
 import Cart from './Cart';
+import Header from './Header';
 
 
 const FEATURES = {
@@ -85,9 +86,7 @@ class App extends Component {
       
     return (
       <div className="App">
-        <header>
-          <h1>ELF Computing | Laptops</h1>
-        </header>
+        <Header />
         <main>
           <Feature
             selected = {this.state.selected}
